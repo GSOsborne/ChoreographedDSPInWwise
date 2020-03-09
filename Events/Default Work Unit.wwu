@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{12C69BDA-7D7A-411A-8ED9-1687D7E8D2B2}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{12C69BDA-7D7A-411A-8ED9-1687D7E8D2B2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayMusic" ID="{7AF26837-4338-4766-ADEE-E835C4A673AF}">
+					<ChildrenList>
+						<Action Name="" ID="{12150739-4661-46F8-A9D4-CCE287B6AF18}" ShortID="364436702">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoasterEnergyTutorial" ID="{2CE78811-57BF-4E03-B143-31BD9A4F31A8}" WorkUnitID="{5E4F8E02-AEBC-4775-895E-F9BE68DFF568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MeasureOfDSP" ID="{6E438938-74D3-4709-855B-0019B7995571}">
+					<ChildrenList>
+						<Action Name="" ID="{59BBF5AF-0E5E-491E-867D-F310BF5DE296}" ShortID="682579255">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MeasureOfDSP" ID="{DCB8B7F3-974E-4606-8DBB-E7972FE2354D}" WorkUnitID="{5E4F8E02-AEBC-4775-895E-F9BE68DFF568}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

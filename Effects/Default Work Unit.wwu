@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9952E480-C7A2-4A8F-80B1-1BF287452EA3}" SchemaVersion="89">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{9952E480-C7A2-4A8F-80B1-1BF287452EA3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="CC16Meter" ID="{2F24519F-2C87-439D-98C9-C070EBCFBB89}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+				<Effect Name="TurnDownThatRacket" ID="{50876F6A-9134-4D38-830B-9D91DE808BEB}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+						<Property Name="LFEGain" Type="Real32" Value="-96.3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="CC16Distortion" ID="{0CAD2A58-A70D-4744-8FA4-E8758770D034}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+						<Property Name="DistortionTone" Type="Real32" Value="100"/>
+						<Property Name="DistortionType" Type="int32" Value="3"/>
+						<Property Name="WetDryMix" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{A936E0DB-3AAB-464C-A149-2621EF283BF2}" ShortID="443722273">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="CC16RTPC" ID="{FD154E54-CEC6-455D-93C3-01A60F805374}" WorkUnitID="{20B493C9-81B3-4800-9087-AEC3E4A49379}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{2807FEE1-48AD-414D-81FD-5F0ECE195440}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>-48</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+				<Effect Name="CC16MeterBus" ID="{72588507-6B97-435E-B540-965784300FF9}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="CC16RTPC" ID="{FD154E54-CEC6-455D-93C3-01A60F805374}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

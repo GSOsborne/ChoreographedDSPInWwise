@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}" SchemaVersion="89">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{4CBF3E2A-D0C9-4176-B066-B7C689B253E6}" WorkUnitID="{4B71AFE5-4900-40D6-AB5E-A82CBAA42821}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+							<ObjectRef Name="CC16Distortion" ID="{0CAD2A58-A70D-4744-8FA4-E8758770D034}" WorkUnitID="{9952E480-C7A2-4A8F-80B1-1BF287452EA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="RTPCMetering" ID="{7B1692E1-73F4-4BBD-B685-48F8CEE54364}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+									<ObjectRef Name="TurnDownThatRacket" ID="{50876F6A-9134-4D38-830B-9D91DE808BEB}" WorkUnitID="{9952E480-C7A2-4A8F-80B1-1BF287452EA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="CC16Bus" ID="{4A824ABA-718B-4DBE-B5F9-1DEC35A16B8A}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="CC16MeterBus" ID="{72588507-6B97-435E-B540-965784300FF9}" WorkUnitID="{9952E480-C7A2-4A8F-80B1-1BF287452EA3}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

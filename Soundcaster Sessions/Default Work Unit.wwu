@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E80C4B7E-08B9-4D6C-811A-81860CD6E4DD}" SchemaVersion="89">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{E80C4B7E-08B9-4D6C-811A-81860CD6E4DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TestToSeeIfGamebarPicksItUp" ID="{5DF4EB71-7500-459A-8731-524FA9305837}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="TutorialSession" ID="{769CC741-901E-4F0F-83D9-1D9DFC34B7BF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMusic" ID="{7AF26837-4338-4766-ADEE-E835C4A673AF}" WorkUnitID="{12C69BDA-7D7A-411A-8ED9-1687D7E8D2B2}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MeasureOfDSP" ID="{6E438938-74D3-4709-855B-0019B7995571}" WorkUnitID="{12C69BDA-7D7A-411A-8ED9-1687D7E8D2B2}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="CC16RTPC" ID="{FD154E54-CEC6-455D-93C3-01A60F805374}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

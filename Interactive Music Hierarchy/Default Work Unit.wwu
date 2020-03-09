@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5E4F8E02-AEBC-4775-895E-F9BE68DFF568}" SchemaVersion="89">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{5E4F8E02-AEBC-4775-895E-F9BE68DFF568}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="CoasterEnergyTutorial" ID="{2CE78811-57BF-4E03-B143-31BD9A4F31A8}" ShortID="857046422">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81E82ABD-1F5C-4BAF-9A22-0C1A9CF7C7C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="CoasterEnergy_WwiseDSPTutorial" ID="{74807778-373B-4C4C-8F2D-76682EEF853B}" ShortID="1028131540">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="17454.5625"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81E82ABD-1F5C-4BAF-9A22-0C1A9CF7C7C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="CoasterEnergy_WwiseDSPTutorial" ID="{18805F59-DCCD-410A-86B5-E6B37FD19CB6}" ShortID="353453751">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CoasterEnergy_WwiseDSPTutorial" ID="{B3C54232-2A53-4D46-836E-7C41771F77A4}" ShortID="398236525">
+											<Language>SFX</Language>
+											<AudioFile>CoasterEnergy_WwiseDSPTutorial.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{96A9E47B-B0C5-468E-885A-18B6E17A25B7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{25A39940-A150-4172-989E-61DF1115861F}">
+											<ClipList>
+												<MusicClip Name="CoasterEnergy_WwiseDSPTutorial" ID="{EA766F8B-E90C-49A9-B4D5-16571CB62AB6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="17454.5625"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="CoasterEnergy_WwiseDSPTutorial" ID="{B3C54232-2A53-4D46-836E-7C41771F77A4}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{8D0469B3-7DF9-4D92-8C62-353AD6FF1B2E}"/>
+								<MusicCue Name="Exit Cue" ID="{8E2E6C34-3BE9-4D59-BEF7-42AF0D3FF088}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="17454.5625"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{232C0F4E-0C35-4479-B509-2B43F4772D3C}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{2F6BD3EF-7EB9-4FEB-9C9B-B0F237CDB1A2}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{036AE40D-C98B-4619-BC3E-63194B0CBE68}" ShortID="813752516">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{F4CE0EEF-5C3E-4278-A9EE-93005BA93944}" ShortID="910505783">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="CoasterEnergy_WwiseDSPTutorial" ID="{74807778-373B-4C4C-8F2D-76682EEF853B}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicSegment Name="MeasureOfDSP" ID="{DCB8B7F3-974E-4606-8DBB-E7972FE2354D}" ShortID="565036376">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81E82ABD-1F5C-4BAF-9A22-0C1A9CF7C7C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="#16RampDown" ID="{68AC9735-2530-455A-B462-891C2FE048B2}" ShortID="212285175">
+							<PropertyList>
+								<Property Name="OverrideMidiTarget" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="MidiTarget">
+									<ObjectRef Name="CC#16Synth" ID="{CCCAF36E-ACBD-46DB-8EE8-285B873234AC}" WorkUnitID="{2D8CEB11-ADFA-4DD5-98B2-A4D3BFC0C34A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}"/>
+								</Reference>
+							</ReferenceList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{4FA951DD-602A-4286-AC6A-26A83828271A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{42203DBD-A544-4467-B3BC-87B45937A3C3}">
+									<ClipList>
+										<MusicClipMidi Name="#16RampDown" ID="{84F90B00-4EEB-4ED6-A145-2195FBA20E61}" ShortID="59283266">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
+												<Property Name="MidiFileName" Type="string" Value="#16RampDown.mid"/>
+											</PropertyList>
+										</MusicClipMidi>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{9EC27F87-BE9F-4217-B51B-06C351C62AD3}"/>
+						<MusicCue Name="Exit Cue" ID="{6684D1A9-4CBB-4850-A35E-2526C262632A}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="2000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

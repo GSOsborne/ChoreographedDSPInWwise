@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2D8CEB11-ADFA-4DD5-98B2-A4D3BFC0C34A}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2D8CEB11-ADFA-4DD5-98B2-A4D3BFC0C34A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="CC#16Synth" ID="{CCCAF36E-ACBD-46DB-8EE8-285B873234AC}" ShortID="436346555">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{81E82ABD-1F5C-4BAF-9A22-0C1A9CF7C7C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="CC16Bus" ID="{4A824ABA-718B-4DBE-B5F9-1DEC35A16B8A}" WorkUnitID="{981BC7D7-760F-4BE5-A759-22E345AEF0D6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="CC#16Synth" ID="{A9752640-A64D-48E4-8588-BC894E76A4FD}" ShortID="361990552" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+							<PropertyList>
+								<Property Name="OutputLevel" Type="Real32">
+									<RTPCList>
+										<RTPC Name="" ID="{C9EC07C1-08E8-4BC3-AE52-402C063EBECB}" ShortID="699398218">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{B2FD44B0-4819-4BA9-9F48-021001F6AB46}" ShortID="557361236">
+															<PropertyList>
+																<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+															</PropertyList>
+														</ModulatorEnvelope>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{90CC2636-E142-4A52-91CE-0B7B20B75D01}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{A60E3BC1-32D5-41CE-AB1F-C184E4FD8C28}" ShortID="331573759">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="CC #16: General Purpose Controller 1" ID="{B618CBCD-04FA-4149-A36B-37B8A1F2B642}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7772D0C2-47CC-4371-8CB7-9BAC599FFD2B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>127</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CC#16Synth" ID="{A9752640-A64D-48E4-8588-BC894E76A4FD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
